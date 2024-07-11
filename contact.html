@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Horizon Travel</title>
+    <!-- Icono -->
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+    <!-- Meta identificacion de la página -->
+    <meta name="page-identity" content="contact">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact_style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/1e6ab72603.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- --------- HERO ---------- -->
+    <header data-parallax="scroll" data-image-src="img/contact/hero_contact.jpg" data-speed="0.2">
+        <div class="menu" data-aos="fade-down" data-aos-duration="800">
+            <div class="logo">
+                <a href="index.html"><img src="img/horizon.svg" alt="Page logo"></a>
+            </div>
+            <nav id="menuContainer">
+                <label id="menu-toggle" class="hamburger menu-toggle">
+                    <input type="checkbox">
+                    <svg viewBox="0 0 32 32">
+                        <path class="line line-top-bottom"
+                            d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                        </path>
+                        <path class="line" d="M7 16 27 16"></path>
+                    </svg>
+                </label>
+                <ul class="list-nav">
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="destinations.html">Destinations</a></li>
+                    <li class="nav-item"><a href="journey.html">Journeys</a></li>
+                    <li class="nav-item activeMenu"><a href="#">Contact</a></li>
+                    <li class="nav-button"><a href=""><span>Travel</span> | <img src="img/icons/mapa.svg" alt=""></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="headerContent">
+            <h2 class="heroSubtitle" data-aos="fade-right" data-aos-duration="800">Contact & Information</h2>
+            <h1 class="heroTitle" data-aos="fade-right" data-aos-duration="800">How Can We <span>Help You?</span></h1>
+        </div>
+    </header>
+
+    <!-- ---------------- GENERAL CONTACT --------------- -->
+    <section class="generalContact">
+        <!-- ---------------- CONTACT INFO --------------- -->
+        <div class="contactInfo">
+            <div class="title">
+                <h3 class="sectionSubtitle">ALL YOU NEED TO KNOW</h3>
+                <h2 class="sectionTitle">Contact Information</h2>
+            </div>
+            <div class="content">
+                <p>
+                    At <span class="dest">Horizon Travel</span> we pride ourselves on always being on hand to
+                    answer any queries or questions our <span class="dest">valued users</span> may have. We
+                    are here to make your travel experience <span class="dest">unforgettable and hassle-free</span>.
+                </p>
+                <div class="line"></div>
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i>+34 954 45 78 85</li>
+                    <li><i class="fa-solid fa-location-dot"></i>C/ COMEDIAS, 7</li>
+                    <li><i class="fa-solid fa-envelope"></i>CONTACT@HORIZON.ES</li>
+                </ul>
+            </div>
+        </div>
+        <!-- ---------------- CONTACT FORM --------------- -->
+        <div class="contactForm">
+            <div class="title">
+                <h3 class="sectionSubtitle">DROP A MESSAGE</h3>
+                <h2 class="sectionTitle">Get In Touch</h2>
+            </div>
+            <form action="">
+                <input type="text" name="name" id="name" placeholder="Your name">
+                <input type="email" name="email" id="email" placeholder="Your email">
+                <input type="tel" name="phone" id="phone" placeholder="Your phone">
+                <textarea name="message" id="message" placeholder="Your message"></textarea>
+                <button type="button">SEND</button>
+            </form>
+        </div>
+    </section>
+    <!-- ---------------- MAP --------------- -->
+    <section class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.9915417739867!2d-4.424345523469182!3d36.72276437226941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f7be3ed69325%3A0x1e79176cd7a4a305!2sC.%20Comedias%2C%207%2C%20Distrito%20Centro%2C%2029008%20M%C3%A1laga!5e0!3m2!1sen!2ses!4v1706729752942!5m2!1sen!2ses"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <!-- ---------------- WORK WITH US --------------- -->
+    <section class="workWithUs">
+        <div class="title">
+            <h3 class="sectionSubtitle">JOIN HOIRZON TEAM</h3>
+            <h2 class="sectionTitle">Work With Us</h2>
+        </div>
+        <div class="content">
+            <form>
+                <input type="text" name="name" id="name" placeholder="Your name">
+                <input type="email" name="email" id="email" placeholder="Your email">
+                <input type="tel" name="phone" id="phone" placeholder="Your phone">
+                <input type="text" name="speciality" id="speciality" placeholder="Your speciality">
+                <textarea name="message" id="message" placeholder="Your message"></textarea>
+                <button type="button">APPLY</button>
+            </form>
+        </div>
+    </section>
+    <!-- ---------------- BANNER --------------- -->
+    <section class="banner" data-parallax="scroll" data-image-src="img/contact/banner_contact.jpg" data-speed="0.2" ></section>
+    <!-- ---------------- FEATURED JOURNEYS --------------- -->
+    <section class="featuredJourneys">
+        <div class="title">
+            <h3 class="sectionSubtitle">RATED BY OUR CLIENTS</h3>
+            <h2 class="sectionTitle">Featured Journeys</h2>
+        </div>
+        <div class="journeys">
+            <div class="journey">
+                <a href="journey.html#london"><div class="image"></div></a>
+                <span>LONDON</span>
+            </div>
+            <div class="journey">
+                <a href="journey.html#paris"><div class="image"></div></a>
+                <span>PARIS</span>
+            </div>
+            <div class="journey">
+                <a href="journey.html#barcelona"><div class="image"></div></a>
+                <span>BARCELONA</span>
+            </div>
+        </div>
+    </section>
+    <!-- ---------------- FEATURED DESTINATIONS --------------- -->
+    <section class="featuredDestinations">
+        <div class="title">
+            <h3 class="sectionSubtitle">RATED BY OUR CLIENTS</h3>
+            <h2 class="sectionTitle">Featured Destinations</h2>
+        </div>
+        <div class="destinations">
+            <div class="destination">
+                <a href="destinations.html#spain"><div class="image"></div></a>
+                <span>SPAIN</span>
+            </div>
+            <div class="destination">
+                <a href="destinations.html#england"><div class="image"></div></a>
+                <span>UNITED KINGDOM</span>
+            </div>
+            <div class="destination">
+                <a href="destinations.html#france"><div class="image"></div></a>
+                <span>FRANCE</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ----------- ---- NEWSLETTER -------------- -->
+    <section class="newsletter">
+        <h2>Subscribe to our newsletter</h2>
+        <p>
+            Subscribe to receive news of new and unique travel plans where you will live
+            incredible adventures.
+        </p>
+        <div class="subscribeForm">
+            <input type="email" name="email" class="emailInput" placeholder="Email address...">
+            <button>Subscribe</button>
+        </div>
+    </section>
+    <!-- --------------- FOOTER ----------------- -->
+    <footer>
+        <div class="footerColumns">
+            <div class="footerColumn">
+                <a href="index.html"><img src="img/horizon.svg" alt="Page logo"></a>
+            </div>
+            <div class="footerColumn">
+                <h2>Pages</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="journey.html">Journeys</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footerColumn">
+                <h2>Top journeys</h2>
+                <ul>
+                    <li><a href="journey.html#london">London</a></li>
+                    <li><a href="journey.html#barcelona">Barcelona</a></li>
+                    <li><a href="journey.html#malaga">Malaga</a></li>
+                    <li><a href="journey.html#paris">Paris</a></li>
+                </ul>
+            </div>
+            <div class="footerColumn">
+                <h2>Contact</h2>
+                <ul>
+                    <li>+34 954 45 78 85</li>
+                    <li>C/ Comedias, 7</li>
+                    <li>contact@horizon.es</li>
+                </ul>
+            </div>
+        </div>
+        <div class="subfooter">
+            <span>&copy;2024
+                <a href="https://arielguerrero.es" target="_blank">arielguerrero.es</a>
+                <span class="rights">| All rights reserved.</span></span>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="js/main.js"></script>
+    <!-- Parallax library -->
+    <script src="js/parallax.min.js"></script>
+</body>
+
+</html>

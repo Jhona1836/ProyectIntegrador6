@@ -1,0 +1,345 @@
+/* ------------ HERO STYLES -------------- */
+header {
+	min-height: 800px;
+	background: transparent;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+
+	display: flex;
+	flex-flow: column;
+	margin-bottom: var(--mb-sections);
+}
+
+/* ----------------------------- UNITED KINGDOM */
+.unitedKingdom {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.unitedKingdom h2 {
+	margin-bottom: 150px;
+}
+/* ------------------------------ LONDRES */
+.journey-a {
+	width: 90%;
+	max-width: 1500px;
+	margin: 0 auto;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+	display: grid;
+	grid-template-columns: 1.1fr 1fr;
+	grid-template-areas: "resume photo" "content content";
+	margin-bottom: 100px;
+	transition: all 0.4s ease-in-out;
+	overflow: hidden;
+}
+
+.resume {
+	grid-area: resume;
+	min-height: 600px;
+	padding: 3rem;
+	display: flex;
+	flex-flow: column;
+	align-items: start;
+	align-content: start;
+	justify-content: space-between;
+	gap: 2rem;
+}
+
+.title h3 {
+	font-family: "Sansation", sans-serif;
+	font-size: var(--selected-title);
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
+	margin-bottom: 2rem;
+}
+
+.title .caracteristicas {
+	font-family: Montserrat, sans-serif;
+	font-size: var(--second-text-size);
+	font-weight: var(--mont-extralight);
+	color: var(--primary-color);
+	letter-spacing: 0.1rem;
+	margin-left: 1rem;
+}
+
+.title .caracteristicas span:first-child {
+	margin-right: 2.25rem;
+}
+
+.title .caracteristicas span {
+	display: inline-flex;
+	align-items: end;
+	align-content: end;
+	gap: 10px;
+}
+
+.title .caracteristicas span i {
+	color: var(--detail-color);
+	font-size: var(--text-size);
+}
+
+.resume .content {
+	font-size: var(--text-size);
+	font-family: Montserrat, sans-serif;
+	font-weight: var(--mont-extralight);
+	line-height: 1.9rem;
+	color: var(--primary-color);
+	width: 90%;
+}
+
+.resume button {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	text-decoration: none;
+	color: var(--primary-color);
+	font-family: "Sansation Light", Montserrat, sans-serif;
+	font-size: 1rem;
+	text-transform: uppercase;
+	background-color: var(--detail-color);
+	padding: 0.8rem 2rem;
+	border-radius: 2px;
+	transition: all 0.3s ease-in-out;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btnActive {
+	background-color: var(--primary-color) !important;
+	color: white !important;
+}
+
+.btnActive:hover {
+	background-color: var(--detail-color) !important;
+	color: var(--primary-color) !important;
+}
+
+.resume button:hover {
+	transform: translateY(-2px);
+	background-color: var(--primary-color);
+	color: white;
+}
+
+.journey-a .photo {
+	grid-area: photo;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.london .photo {
+	background-image: url(../img/journeys/london_journey.jpg);
+}
+
+.journey-a > .content {
+	grid-area: content;
+	opacity: 0;
+	height: 0px;
+	min-height: 0;
+	transition: all 0.6s ease-in-out;
+}
+
+@keyframes openview {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes closeview {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.open {
+	animation: 0.5s ease-in-out forwards openview;
+}
+
+.closed {
+	animation: 0.5s ease-in-out forwards closeview;
+}
+
+.journey-a > .content .body {
+	padding: 3rem !important;
+}
+
+.journey-a
+	> .content
+	.body
+	.day:not(.journey-a > .content .body .day:last-child) {
+	margin-bottom: 4rem;
+}
+
+.journey-a > .content .body .day h4 {
+	font-family: "Sansation Bold", sans-serif;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	margin-bottom: 1.6rem;
+}
+
+.journey-a > .content .body .day p {
+	font-size: var(--text-size);
+	font-family: Montserrat, sans-serif;
+	font-weight: var(--mont-extralight);
+	line-height: 1.9rem;
+	color: var(--primary-color);
+}
+
+/* ------------------- BATH */
+.bath {
+	margin-bottom: var(--mb-sections);
+}
+.bath .photo {
+	background-image: url(../img/journeys/bath_journey.jpg);
+}
+
+/* ----------- SPAIN  */
+.spain {
+	width: 90%;
+	margin: 0 auto;
+	text-align: right;
+}
+
+.spain h2 {
+	margin-bottom: 150px;
+}
+
+/* ------------------ BARCELONA */
+.barcelona .photo {
+	background-image: url(../img/journeys/barcelona_journey.jpg);
+}
+/* ------------------ MALAGA */
+.malaga .photo {
+	background-image: url(../img/journeys/malaga_journey.jpg);
+}
+
+.malaga {
+	margin-bottom: var(--mb-sections);
+}
+/* ------------------ FRANCE */
+.france {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.france h2 {
+	margin-bottom: 150px;
+}
+/* -------------------- PARIS */
+.paris .photo {
+	background-image: url(../img/journeys/paris_journey.jpg);
+}
+/* ----------------------- LYON */
+.lyon .photo {
+	background-image: url(../img/journeys/lyon_journey.jpg);
+}
+
+.lyon {
+	margin-bottom: var(--mb-sections);
+}
+
+/* --------------- MEDIA QUERIES ---------------- */
+@media screen and (max-width: 1500px) {
+	.journey-a .resume .content {
+		width: 98%;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.journey-a {
+		grid-template-areas:
+			"photo photo"
+			"resume resume"
+			"content content";
+	}
+
+	.journey-a .photo {
+		min-height: 400px;
+	}
+
+	.parallax-mirror {
+		display: none;
+	}
+	header {
+		background-attachment: scroll;
+		background-image: url(../img/journeys/hero_journeys.jpg);
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.journey-a .resume .content {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.journey-a .resume {
+		padding: 2rem;
+	}
+
+	.journey-a .resume .title {
+		width: 100%;
+	}
+
+	.journey-a .resume .title h3 {
+		text-align: center;
+		line-height: 2.8rem;
+		width: 100%;
+	}
+
+	.journey-a .resume .title .caracteristicas {
+		margin-left: 0;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+	}
+
+	.journey-a .title .caracteristicas span {
+		margin: 0;
+	}
+
+	.journey-a .resume .content {
+		text-align: justify;
+	}
+
+	.journey-a > .content .body .day h4 {
+		text-align: center;
+	}
+	
+	.journey-a > .content .body .day p {
+		text-align: justify;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.headerContent {
+		text-align: center;
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		align-content: center;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.journey-a .resume .title .caracteristicas {
+		flex-flow: column;
+		align-items: center;
+		align-content: center;
+		row-gap: 1.5rem;
+	}
+
+	.journey-a .resume button {
+		margin: 0 auto;
+	}
+}

@@ -1,0 +1,815 @@
+/* ------------ HERO STYLES -------------- */
+header {
+	min-height: 800px;
+	background: transparent;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+
+	display: flex;
+	flex-flow: column;
+	margin-bottom: var(--mb-sections);
+}
+
+/* --------- SPAIN STYLES ------------ */
+.spain {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: var(--mb-sections);
+}
+
+.spainContent {
+	flex: 1;
+}
+
+.spainContent .sectionTitle {
+	margin-bottom: 50px;
+}
+
+.spainImages {
+	flex: 1;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	align-items: end;
+	align-content: end;
+	gap: 2rem;
+}
+
+.spainImages .image {
+	width: 70%;
+	min-height: 300px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: all 0.5s ease-in-out;
+	cursor: crosshair;
+}
+
+.spainImages .image:hover {
+	width: 80%;
+}
+
+.spainImages .image:first-child {
+	background-image: url(../img/destinations/spain1.jpg);
+}
+
+.spainImages .image:nth-child(2) {
+	align-self: flex-start;
+	background-image: url(../img/destinations/spain2.jpg);
+}
+
+.spainContent .content {
+	padding-right: 10rem;
+}
+
+.spainContent .content p {
+	font-size: var(--text-size);
+	font-family: Montserrat, sans-serif;
+	font-weight: var(--mont-extralight);
+	line-height: 1.9rem;
+	color: var(--primary-color);
+}
+
+.spainContent .content p:not(.spainContent .content p:last-child) {
+	margin-bottom: 2rem;
+}
+
+.spainContent .content ul {
+	list-style: none;
+	font-size: var(--text-size);
+	font-family: Montserrat, sans-serif;
+	font-weight: var(--mont-extralight);
+	line-height: 2.4rem;
+	color: var(--primary-color);
+	margin-bottom: 2rem;
+}
+
+.spainContent .content ul li {
+	transform: translateX(30px);
+	position: relative;
+}
+
+.spainContent .content ul li::before {
+	content: "";
+	width: 4px;
+	border-radius: 1px;
+	height: 40%;
+	background-color: var(--detail-color);
+	position: absolute;
+	top: 50%;
+	left: -15px;
+	transform: translateY(-50%);
+}
+
+/* ------------- TOP ACTIVITIES SPAIN ------------ */
+.spainActivities {
+	width: 100%;
+	text-align: center;
+	margin-bottom: var(--mb-sections);
+}
+
+.spainActivities h2 {
+	margin-bottom: 100px;
+}
+
+.activities-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+	grid-auto-rows: minmax(300px, 1fr);
+	gap: 1.5rem;
+}
+
+.row-span-2 {
+	grid-row: span 2 / auto;
+}
+
+.activity {
+	border-radius: 2px;
+	cursor: crosshair;
+	overflow: hidden;
+	position: relative;
+}
+
+.activity a i {
+	color: var(--detail-color);
+	margin-right: 7px;
+	transition: all 0.3s ease-in-out;
+}
+
+.activity a {
+	width: 100%;
+	position: absolute;
+	left: 50%;
+	bottom: -50px;
+	transform: translateX(-50%);
+
+	font-family: "Sansation";
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+	font-size: var(--selected-text);
+	letter-spacing: 0.2rem;
+	transition-property: bottom, color;
+	transition-duration: 0.5s, 0.2s;
+	transition-timing-function: ease-in-out;
+}
+
+.activity .img {
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: all 0.5s ease-in-out;
+}
+
+.activity:hover .img {
+	transform: scale(1.07);
+	filter: brightness(0.5);
+}
+
+.activity:hover a {
+	bottom: 40px;
+}
+
+.activity a:hover i {
+	margin-right: 15px;
+}
+
+.spainActivities .activity:first-child .img {
+	background-image: url(../img/destinations/pais1act1.jpg);
+}
+.spainActivities .activity:nth-child(2) .img {
+	background-image: url(../img/destinations/pais1act2.jpg);
+}
+.spainActivities .activity:nth-child(3) .img {
+	background-image: url(../img/destinations/pais1act3.jpg);
+}
+.spainActivities .activity:nth-child(4) .img {
+	background-image: url(../img/destinations/pais1act4.jpg);
+}
+.spainActivities .activity:last-child .img {
+	background-image: url(../img/destinations/pais1act5.jpg);
+}
+
+/* ---------------- SPAIN MONUMENTS ------------ */
+.spainMonuments {
+	width: 100%;
+	margin-bottom: var(--mb-sections);
+}
+
+.spainMonuments h2 {
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 100px;
+	text-align: right;
+}
+
+.monument {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+
+.monument .image {
+	flex: 1;
+	height: 650px;
+	overflow: hidden;
+}
+
+.monument .image .img {
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: all 0.5s ease-in-out;
+	cursor: crosshair;
+}
+
+.monument .image:hover .img {
+	transform: scale(1.05);
+	filter: grayscale(0.5);
+}
+
+.spainMonuments .monument .image:first-child .img {
+	background-image: url(../img/destinations/monument1Spain.jpg);
+}
+.spainMonuments .monument .image:last-child .img {
+	background-image: url(../img/destinations/monument2Spain.jpg);
+}
+
+.monument .content {
+	flex: 1;
+}
+
+.monument1Es .content h3,
+.monument1Es .content p,
+.monument1Es .content > span {
+	padding-left: 100px;
+	padding-right: 15%;
+}
+
+.monument1Es .content > span {
+	text-align: left;
+	margin-right: auto;
+}
+
+.monument1Es .content > span i {
+	margin-inline-end: 10px;
+}
+
+.monument2Es .content h3,
+.monument2Es .content p,
+.monument2Es .content > span {
+	text-align: right;
+	padding-right: 100px;
+	padding-left: 15%;
+}
+
+.monument2Es .content > span {
+	text-align: right;
+	margin-left: auto;
+}
+
+.monument2Es .content > span i {
+	margin-inline-start: 10px;
+}
+
+.monument .content h3 {
+	font-family: "Sansation", sans-serif;
+	font-size: var(--selected-title);
+	letter-spacing: 0.2rem;
+	margin-bottom: 50px;
+	line-height: 2.5rem;
+}
+
+.monument .content p {
+	font-size: var(--text-size);
+	font-family: Montserrat, sans-serif;
+	font-weight: var(--mont-extralight);
+	line-height: 1.9rem;
+	color: var(--primary-color);
+	margin-bottom: 100px;
+}
+
+.monument .content > span {
+	display: inline-block;
+	font-family: Montserrat, sans-serif;
+	font-size: var(--second-text-size);
+	font-weight: var(--mont-extralight);
+	width: 100%;
+}
+
+.monument .content > span i {
+	color: var(--detail-color);
+}
+
+/* ------------------ ENGLAND STYLES -------------- */
+.england {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: var(--mb-sections);
+}
+
+.englandContent {
+	flex: 1;
+}
+
+.englandContent .sectionTitle {
+	margin-bottom: 50px;
+}
+
+.englandContent .title {
+	text-align: right;
+}
+
+.englandImages {
+	flex: 1;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	align-items: end;
+	align-content: end;
+	gap: 2rem;
+}
+
+.englandImages .image {
+	width: 70%;
+	min-height: 300px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: all 0.5s ease-in-out;
+	cursor: crosshair;
+}
+
+.englandImages .image:hover {
+	width: 80%;
+}
+
+.englandImages .image:first-child {
+	background-image: url(../img/destinations/england1.jpg);
+}
+
+.englandImages .image:nth-child(2) {
+	align-self: flex-start;
+	background-image: url(../img/destinations/england2.jpg);
+}
+
+.englandContent .content {
+	padding-left: 10rem;
+	text-align: right;
+}
+
+.englandContent .content p {
+	font-size: var(--text-size);
+	font-family: Montserrat, sans-serif;
+	font-weight: var(--mont-extralight);
+	line-height: 1.9rem;
+	color: var(--primary-color);
+}
+
+.englandContent .content p:not(.englandContent .content p:last-child) {
+	margin-bottom: 2rem;
+}
+
+.englandContent .content ul {
+	list-style: none;
+	font-size: var(--text-size);
+	font-family: Montserrat, sans-serif;
+	font-weight: var(--mont-extralight);
+	line-height: 2.4rem;
+	color: var(--primary-color);
+	margin-bottom: 2rem;
+}
+
+.englandContent .content ul li {
+	transform: translateX(-30px);
+	position: relative;
+}
+
+.englandContent .content ul li::before {
+	content: "";
+	width: 4px;
+	border-radius: 1px;
+	height: 40%;
+	background-color: var(--detail-color);
+	position: absolute;
+	top: 50%;
+	right: -15px;
+	transform: translateY(-50%);
+}
+
+/* ----------------------- ENGLAND ACTIVITIES ---------------- */
+.englandActivities {
+	width: 100%;
+	text-align: center;
+	margin-bottom: var(--mb-sections);
+}
+
+.englandActivities h2 {
+	margin-bottom: 100px;
+}
+
+.englandActivities .activity:first-child .img {
+	background-image: url(../img/destinations/pais2act1.jpg);
+}
+.englandActivities .activity:nth-child(2) .img {
+	background-image: url(../img/destinations/pais2act3.jpg);
+}
+.englandActivities .activity:nth-child(3) .img {
+	background-image: url(../img/destinations/pais2act4.jpg);
+}
+.englandActivities .activity:nth-child(4) .img {
+	background-image: url(../img/destinations/pais2act2.jpg);
+}
+.englandActivities .activity:last-child .img {
+	background-image: url(../img/destinations/pais2act5.jpg);
+}
+
+/* ---------------- ENGLAND MONUMENTS ------------ */
+.englandMonuments {
+	width: 100%;
+	margin-bottom: var(--mb-sections);
+}
+
+.englandMonuments h2 {
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 100px;
+	text-align: left;
+}
+
+.englandMonuments .monument .image:first-child .img {
+	background-image: url(../img/destinations/monument2England.jpg);
+}
+.englandMonuments .monument .image:last-child .img {
+	background-image: url(../img/destinations/monument1England.jpg);
+}
+
+.monument1En .content h3,
+.monument1En .content p,
+.monument1En .content > span {
+	text-align: right;
+	padding-right: 100px;
+	padding-left: 15%;
+}
+
+.monument1En .content > span {
+	margin-left: auto;
+}
+
+.monument1En .content > span i {
+	margin-inline-start: 10px;
+}
+
+.monument2En .content h3,
+.monument2En .content p,
+.monument2En .content > span {
+	text-align: left;
+	padding-left: 100px;
+	padding-right: 15%;
+}
+
+.monument2En .content > span {
+	text-align: left;
+	margin-right: auto;
+}
+
+.monument2En .content > span i {
+	margin-inline-end: 10px;
+}
+
+/* --------- FRANCE STYLES ------------ */
+.france {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: var(--mb-sections);
+}
+
+.franceContent {
+	flex: 1;
+}
+
+.franceContent .sectionTitle {
+	margin-bottom: 50px;
+}
+
+.franceImages {
+	flex: 1;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	align-items: end;
+	align-content: end;
+	gap: 2rem;
+}
+
+.franceImages .image {
+	width: 70%;
+	min-height: 300px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: all 0.5s ease-in-out;
+	cursor: crosshair;
+}
+
+.franceImages .image:hover {
+	width: 80%;
+}
+
+.franceImages .image:first-child {
+	background-image: url(../img/destinations/france1.jpg);
+}
+
+.franceImages .image:nth-child(2) {
+	align-self: flex-start;
+	background-image: url(../img/destinations/france2.jpg);
+}
+
+.franceContent .content {
+	padding-right: 10rem;
+}
+
+.franceContent .content p {
+	font-size: var(--text-size);
+	font-family: Montserrat, sans-serif;
+	font-weight: var(--mont-extralight);
+	line-height: 1.9rem;
+	color: var(--primary-color);
+}
+
+.franceContent .content p:not(.spainContent .content p:last-child) {
+	margin-bottom: 2rem;
+}
+
+.franceContent .content ul {
+	list-style: none;
+	font-size: var(--text-size);
+	font-family: Montserrat, sans-serif;
+	font-weight: var(--mont-extralight);
+	line-height: 2.4rem;
+	color: var(--primary-color);
+	margin-bottom: 2rem;
+}
+
+.franceContent .content ul li {
+	transform: translateX(30px);
+	position: relative;
+}
+
+.franceContent .content ul li::before {
+	content: "";
+	width: 4px;
+	border-radius: 1px;
+	height: 40%;
+	background-color: var(--detail-color);
+	position: absolute;
+	top: 50%;
+	left: -15px;
+	transform: translateY(-50%);
+}
+
+/* ------------- TOP ACTIVITIES FRANCE ------------ */
+.franceActivities {
+	width: 100%;
+	text-align: center;
+	margin-bottom: var(--mb-sections);
+}
+
+.franceActivities h2 {
+	margin-bottom: 100px;
+}
+
+.franceActivities .activity:first-child .img {
+	background-image: url(../img/destinations/pais3act1.jpg);
+}
+.franceActivities .activity:nth-child(2) .img {
+	background-image: url(../img/destinations/pais3act3.jpg);
+}
+.franceActivities .activity:nth-child(3) .img {
+	background-image: url(../img/destinations/pais3act5.jpg);
+}
+.franceActivities .activity:nth-child(4) .img {
+	background-image: url(../img/destinations/pais3act2.jpg);
+}
+.franceActivities .activity:last-child .img {
+	background-image: url(../img/destinations/pais3act4.jpg);
+}
+
+/* ---------------- FRANCE MONUMENTS ------------ */
+.franceMonuments {
+	width: 100%;
+	margin-bottom: var(--mb-sections);
+}
+
+.franceMonuments h2 {
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 100px;
+	text-align: right;
+}
+
+.franceMonuments .monument .image:first-child .img {
+	background-image: url(../img/destinations/monument1France.jpg);
+}
+.franceMonuments .monument .image:last-child .img {
+	background-image: url(../img/destinations/monument2France.jpg);
+}
+
+.monument1Fr .content h3,
+.monument1Fr .content p,
+.monument1Fr .content > span {
+	padding-left: 100px;
+	padding-right: 15%;
+}
+
+.monument1Fr .content > span {
+	text-align: left;
+	margin-right: auto;
+}
+
+.monument1Fr .content > span i {
+	margin-inline-end: 10px;
+}
+
+.monument2Fr .content h3,
+.monument2Fr .content p,
+.monument2Fr .content > span {
+	text-align: right;
+	padding-right: 100px;
+	padding-left: 15%;
+}
+
+.monument2Fr .content > span {
+	text-align: right;
+	margin-left: auto;
+}
+
+.monument2Fr .content > span i {
+	margin-inline-start: 10px;
+}
+
+/* ------------------- MEDIA QUERIES ----------------- */
+@media screen and (max-width: 1500px) {
+	.spain .spainContent .content,
+	.france .franceContent .content {
+		padding-right: 5rem;
+	}
+
+	.england .englandContent .content {
+		padding-left: 5rem;
+	}
+
+	.spainMonuments .monument .image,
+	.englandMonuments .monument .image,
+	.franceMonuments .monument .image {
+		flex: 0.8;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.parallax-mirror {
+		display: none;
+	}
+	header {
+		background-attachment: scroll;
+		background-image: url(../img/destinations/destination_hero.jpg);
+	}
+
+	.spain .spainImages,
+	.france .franceImages,
+	.england .englandImages {
+		flex: 0.75;
+	}
+
+	.spain .spainImages .image,
+	.france .franceImages .image,
+	.england .englandImages .image {
+		width: 95%;
+	}
+
+	.spain .spainImages .image:hover,
+	.france .franceImages .image:hover,
+	.england .englandImages .image:hover {
+		width: 100%;
+	}
+
+	.spainMonuments .monument,
+	.englandMonuments .monument,
+	.franceMonuments .monument {
+		flex-flow: column;
+	}
+
+	.spainMonuments .monument .content,
+	.englandMonuments .monument .content,
+	.franceMonuments .monument .content {
+		margin: 0 auto;
+		margin-bottom: 100px;
+		width: 90%;
+	}
+
+	.spainMonuments .monument .content *,
+	.englandMonuments .monument .content *,
+	.franceMonuments .monument .content * {
+		padding: 0;
+	}
+
+	.spainMonuments .monument1Es .image,
+	.englandMonuments .monument1En .image,
+	.franceMonuments .monument1Fr .image {
+		margin-bottom: 100px;
+	}
+
+	.spainMonuments .monument .image,
+	.englandMonuments .monument .image,
+	.franceMonuments .monument .image {
+		flex: 1 1 600px;
+		width: 100%;
+		order: 1;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.spain,
+	.france,
+	.england {
+		flex-flow: column;
+	}
+
+	.spain .spainContent,
+	.france .franceContent,
+	.england .englandContent {
+		margin-bottom: 100px;
+	}
+
+	.spain .spainImages,
+	.france .franceImages,
+	.england .englandImages {
+		width: 100%;
+		order: 1;
+	}
+
+	.spain .spainImages .image,
+	.france .franceImages .image,
+	.england .englandImages .image {
+		width: 100%;
+		min-height: 350px !important;
+	}
+
+	.activities-container {
+		grid-template-columns: 1fr;
+		grid-auto-rows: minmax(400px, 1fr);
+	}
+
+	.spainContent .content ul li {
+		transform: none;
+		margin-left: 15px;
+		position: relative;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.spain .spainContent .content,
+	.france .franceContent .content {
+		padding-right: 0;
+	}
+
+	.england .englandContent .content {
+		padding-left: 0;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	header {
+		background-position: 35% !important;
+	}
+	.headerContent {
+		text-align: center;
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		align-content: center;
+	}
+}

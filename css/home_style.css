@@ -1,0 +1,1083 @@
+/* --------------- HERO STYLES -------------- */
+header {
+	height: 100vh;
+	max-width: 100vw;
+	background: transparent;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	display: flex;
+	flex-flow: column;
+	transition: all 0.3s ease-in-out;
+	margin-bottom: var(--mb-sections);
+}
+
+.heroButton {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+
+.heroButton a:last-child {
+	display: inline-block;
+	height: 100px;
+	aspect-ratio: 1 /1;
+	text-align: center;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: var(--detail-color);
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 50%;
+	font-size: 1.5rem;
+	box-shadow: -2px 2px 10px 0px rgba(0, 0, 0, 0.1);
+	order: 1;
+	transition: all 0.3s ease-in-out;
+}
+
+.heroButton a:last-child i {
+	background-color: white;
+	width: 60%;
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: -2px 2px 10px 0px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease-in-out;
+}
+
+.heroButton a:last-child:hover {
+	transform: translateY(-2px);
+}
+
+.heroButton a:last-child:hover i {
+	transform: scale(1.1);
+}
+
+.heroButton a:first-child {
+	margin-left: 1.5rem;
+	text-decoration: none;
+	color: var(--detail-color);
+	font-family: Montserrat, sans-serif;
+	font-weight: var(--mont-semibold);
+	font-size: var(--text-size);
+	order: 2;
+}
+
+.heroButton a:first-child:hover + a {
+	transform: translateY(-2px);
+}
+
+.heroButton a:first-child:hover + a i {
+	transform: scale(1.1);
+}
+
+/* -------------- WHY HORIZON STYLES --------------*/
+.whyHorizon {
+	width: 100%;
+	margin-bottom: var(--mb-sections);
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.whyHorizonTitle {
+	text-align: center;
+	width: 90%;
+	margin-inline: auto;
+	grid-column: span 3;
+	margin-bottom: 3.125rem;
+}
+
+.whyHorizonCaracteristicas {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	align-items: end;
+	align-content: end;
+	padding-block: 2rem;
+}
+
+.whyHorizonCaracteristicas .caracteristica {
+	max-width: 16.25rem;
+	text-align: center;
+}
+
+.whyHorizonCaracteristicas .caracteristica .icono {
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 45px;
+	margin-bottom: 1rem;
+}
+
+.whyHorizonCaracteristicas .caracteristica:first-child .icono {
+	background-image: url(../img/icons/mapa.svg);
+}
+.whyHorizonCaracteristicas .caracteristica:last-child .icono {
+	background-image: url(../img/icons/people.svg);
+}
+
+.whyHorizonCaracteristicas .caracteristica h4 {
+	font-size: var(--selected-text);
+	font-family: Montserrat, sans-serif;
+	font-weight: var(--mont-medium);
+	margin-bottom: 1rem;
+	color: var(--primary-color);
+}
+
+.whyHorizonCaracteristicas .caracteristica p {
+	font-size: var(--second-text-size);
+	font-family: Montserrat, sans-serif;
+	font-weight: var(--mont-extralight);
+	letter-spacing: 0.05rem;
+	line-height: 1.3rem;
+	color: var(--primary-color);
+}
+
+.whyHorizonImages {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.whyHorizonImages .imagePrincipal {
+	flex: 1;
+	height: 540px;
+	max-width: 400px;
+	background-image: url(../img/home/whyUs2.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	transform: rotate(-2deg);
+	position: relative;
+	transition: all 0.5s ease-in-out;
+}
+
+.whyHorizonImages .imagePrincipal .imageSecundaria {
+	width: 230px;
+	height: 340px;
+	background-image: url(../img/home/whyUs1.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: absolute;
+	bottom: -7rem;
+	right: -3rem;
+	transform: rotate(4deg);
+	transition: all 0.5s ease-in-out;
+}
+
+.whyHorizonImages .imagePrincipal:hover {
+	transform: rotate(-3deg);
+}
+
+.whyHorizonImages .imagePrincipal:hover .imageSecundaria {
+	transform: rotate(7deg);
+}
+
+.p2 {
+	display: none;
+	background-image: url(../img/home/whyUs1.jpg) !important;
+}
+
+.whyHorizonContent {
+	padding-block: 2rem;
+}
+
+.whyHorizonContent h3 {
+	font-size: var(--selected-text);
+	font-family: Montserrat, sans-serif;
+	font-weight: var(--mont-medium);
+	margin-bottom: 1rem;
+	max-width: 300px;
+	line-height: 2rem;
+	color: var(--primary-color);
+}
+
+.whyHorizonContent p {
+	font-size: var(--text-size);
+	font-family: Montserrat, sans-serif;
+	font-weight: var(--mont-extralight);
+	line-height: 1.9rem;
+	max-width: 325px;
+	color: var(--primary-color);
+}
+
+.whyHorizonContent p.firstChild {
+	margin-bottom: 2rem;
+}
+
+/* --------------------- TOP JOURNEYS ---------------- */
+.topJourneys {
+	margin: 0 auto;
+	padding-top: 7rem;
+	margin-bottom: var(--mb-sections);
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: start;
+	align-content: start;
+	width: 90%;
+}
+
+.topJourneys .sectionTitle {
+	margin-bottom: 50px;
+}
+
+.topJourneys .topJourneysContent {
+	flex: 1;
+}
+
+.topJourneys .topJourneysContent p {
+	font-size: var(--text-size);
+	font-family: Montserrat, sans-serif;
+	font-weight: var(--mont-extralight);
+	line-height: 1.9rem;
+	max-width: 400px;
+	color: var(--primary-color);
+}
+
+.topJourneys .topJourneysContent p.firstChild {
+	margin-bottom: 2rem;
+}
+
+.topJourneys .swiper {
+	flex: 2;
+}
+
+.swiper {
+	width: 100%;
+	z-index: 800;
+	position: relative;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 30px;
+	aspect-ratio: 7 / 9;
+	display: flex;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.swiper-slide:hover img {
+	transform: scale(1.05);
+	filter: grayscale(0.8);
+	cursor: crosshair;
+}
+
+.swiper-button-next {
+	display: none;
+}
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: all 0.5s ease-in-out;
+}
+
+#nexSlide {
+	position: absolute;
+	z-index: 999;
+	top: 50%;
+	transform: translateY(-50%) translateX(-20px);
+
+	background: none;
+	background-color: white;
+	border: none;
+	outline: none;
+	font-size: 3rem;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+	font-size: 2.5rem;
+	cursor: pointer;
+	box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* ------------------ ABOUT HORIZON ----------------- */
+.aboutHorizon {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+
+	margin-bottom: var(--mb-sections);
+}
+
+.aboutHorizonGallery {
+	flex: 1;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 275px 275px 275px;
+	grid-template-areas:
+		"foto1 foto2"
+		"foto1 foto4"
+		"foto3 foto4";
+	gap: 1.5rem;
+}
+
+.aboutHorizonGallery .photo {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+.aboutHorizonGallery .photo:first-child {
+	grid-area: foto1;
+}
+.aboutHorizonGallery .photo:nth-child(2) {
+	grid-area: foto2;
+}
+.aboutHorizonGallery .photo:nth-child(3) {
+	grid-area: foto3;
+}
+.aboutHorizonGallery .photo:last-child {
+	grid-area: foto4;
+}
+
+.aboutHorizonGallery .photo:first-child .img {
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/home/aboutFoto1.jpg);
+}
+.aboutHorizonGallery .photo:nth-child(2) .img {
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/home/aboutFoto4.jpg);
+}
+.aboutHorizonGallery .photo:nth-child(3) .img {
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/home/aboutFoto3.jpg);
+}
+.aboutHorizonGallery .photo:last-child .img {
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/home/aboutFoto2.jpg);
+}
+
+.aboutHorizonGallery .photo .img {
+	transition: all 0.5s ease-in-out;
+}
+
+.aboutHorizonGallery .photo:hover .img {
+	transform: scale(1.05);
+}
+
+.aboutHorizonGallery .photo:first-child,
+.aboutHorizonGallery .photo:last-child {
+	grid-row: span 2 / auto;
+}
+
+.aboutHorizonContent {
+	flex: 1;
+	text-align: right;
+}
+
+.aboutHorizonContent .sectionTitle {
+	margin-bottom: 3.125rem;
+}
+
+.aboutHorizonContent p {
+	font-size: var(--text-size);
+	font-family: Montserrat, sans-serif;
+	font-weight: var(--mont-extralight);
+	line-height: 1.9rem;
+	margin-left: 7rem;
+	color: var(--primary-color);
+}
+
+.aboutHorizonContent p:not(.aboutHorizonContent p:last-child) {
+	margin-bottom: 2rem;
+}
+
+/* ---------------------- RESUME BANNER -----------------  */
+.resumeBanner {
+	width: 100%;
+	min-height: 29rem;
+	margin-bottom: var(--mb-sections);
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	background: transparent;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.resumeItem {
+	color: white;
+	font-family: "Sansation";
+	font-size: var(--selected-text);
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+}
+
+.resumeItem h3 {
+	color: rgba(255, 255, 255, 0.9);
+	font-family: "Sansation Light", sans-serif;
+	font-size: var(--title-section-size);
+	letter-spacing: 0.5rem;
+	margin-bottom: 1.5rem;
+	transition: all 0.2s ease-in-out;
+}
+
+.resumeItem h3:hover {
+	color: white;
+	filter: brightness(1.5);
+}
+
+/* -------------------- HISTORY STYLES ----------------- */
+.ourHistory {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+
+	margin-bottom: var(--mb-sections);
+}
+
+.ourHistoryContent {
+	flex: 9;
+	padding: 3rem;
+	padding: 6rem 6rem 6rem 0;
+	background-color: white;
+	transform: translateX(6rem);
+	border-radius: 3px;
+}
+
+.ourHistoryContent .sectionTitle {
+	margin-bottom: 3.125rem;
+}
+
+.ourHistoryContent p {
+	font-size: var(--text-size);
+	font-family: Montserrat, sans-serif;
+	font-weight: var(--mont-extralight);
+	line-height: 1.9rem;
+	color: var(--primary-color);
+}
+
+.ourHistoryContent p:not(.ourHistoryContent p:last-child) {
+	margin-bottom: 2rem;
+}
+
+.ourHistoryImage {
+	flex: 10;
+	min-height: 1000px;
+	background: transparent;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right;
+	/* background-image: url(../img/home/history2.jpg); */
+}
+
+/* ------------------------ FEATURES STYLES ---------------- */
+.features {
+	width: 100%;
+	min-height: 37.5rem;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	background: transparent;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	margin-bottom: var(--mb-sections);
+}
+
+.feature {
+	max-width: 23.4rem;
+	color: white;
+}
+
+.feature .icono {
+	width: 125px;
+	height: 50px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin: 0 auto;
+	margin-bottom: 1.5rem;
+}
+
+.feature:first-child .icono {
+	background-image: url(../img/icons/infinite_ico.svg);
+}
+.feature:nth-child(2) .icono {
+	background-image: url(../img/icons/handshake_ico.svg);
+}
+.feature:last-child .icono {
+	background-image: url(../img/icons/mountain_ico.svg);
+}
+
+.feature h2 {
+	font-size: var(--selected-text);
+	font-family: "Sansation", sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	margin-bottom: 3.125rem;
+}
+
+.feature p {
+	font-size: var(--text-size);
+	font-family: Montserrat, sans-serif;
+	font-weight: var(--mont-extralight);
+	line-height: 1.9rem;
+}
+
+/* --------------------------- TEAM STYLES ------------------------ */
+.ourTeam {
+	width: 100%;
+	text-align: center;
+	margin-bottom: var(--mb-sections);
+}
+
+.ourTeamTitle {
+	margin-bottom: 6.25rem;
+}
+
+.teamCards {
+	font-size: var(--selected-text);
+	font-family: "Sansation", sans-serif;
+	text-transform: uppercase;
+	color: var(--primary-color);
+	letter-spacing: 0.2rem;
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: start;
+	align-content: start;
+	gap: 2rem;
+}
+
+.teamMember .image {
+	width: 18.75rem;
+	height: 23.125rem;
+	margin-bottom: 1.563rem;
+	overflow: hidden;
+}
+
+.teamMember .image .img {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	transition: all 0.4s ease-in-out;
+}
+
+.teamMember .image:hover .img {
+	cursor: crosshair;
+	filter: grayscale(0.8);
+	transform: scale(1.05);
+}
+
+.teamMember:first-child .image .img {
+	background-image: url(../img/home/teamFt1.jpg);
+}
+.teamMember:nth-child(2) .image .img {
+	background-image: url(../img/home/teamFt4.jpg);
+}
+.teamMember:nth-child(3) .image .img {
+	background-image: url(../img/home/teamFt2.jpg);
+}
+.teamMember:last-child .image .img {
+	background-image: url(../img/home/teamFt3.jpg);
+}
+
+.teamMember .name {
+	margin-bottom: 3.125rem;
+}
+
+.teamMember .socials {
+	margin: 0 auto;
+	margin-bottom: 2.5rem;
+	max-width: 85%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: center;
+}
+
+.teamMember .socials .social {
+	height: 20px;
+	width: 25px;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+.teamMember .socials .social:hover {
+	transform: rotate(5deg) translateY(-2px) scale(1.01);
+}
+
+.teamMember .socials .social:first-child {
+	background-image: url(../img/icons/fb_ico.svg);
+}
+.teamMember .socials .social:nth-child(2) {
+	background-image: url(../img/icons/tw_ico.svg);
+}
+.teamMember .socials .social:last-child {
+	background-image: url(../img/icons/insta_ico.svg);
+}
+.teamMember .socials .social:first-child:hover {
+	background-image: url(../img/icons/fb_o_ico.svg);
+}
+.teamMember .socials .social:nth-child(2):hover {
+	background-image: url(../img/icons/tw_o_ico.svg);
+}
+.teamMember .socials .social:last-child:hover {
+	background-image: url(../img/icons/insta_o_ico.svg);
+}
+
+/* --------------- MEDIA QUERIES ---------------- */
+@media screen and (max-width: 1700px) {
+	.whyHorizon {
+		grid-template-columns: 1fr 1.5fr 1fr;
+	}
+}
+
+@media screen and (max-width: 1400px) {
+	.topJourneysContent {
+		flex: 1;
+	}
+
+	.topJourneys .swiper {
+		flex: 1.2;
+		padding-block: 0;
+	}
+
+	.swiper-slide {
+		aspect-ratio: auto !important;
+	}
+
+	/* ------------ features banner */
+	.features {
+		flex-flow: row wrap;
+		column-gap: 5rem;
+		row-gap: 5rem;
+	}
+
+	/* about */
+	.aboutHorizonGallery {
+		flex: .55;
+		grid-template-rows: 285px 285px;
+		grid-template-areas: 
+					"foto2 foto2"
+					"foto3 foto3";
+	}
+
+	.aboutHorizonGallery .photo .img {
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	.aboutHorizonGallery .photo:first-child,
+	.aboutHorizonGallery .photo:last-child {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1350px) {
+	.teamCards {
+		gap: 2%;
+		width: 90%;
+		margin-inline: auto;
+	}
+	.teamMember:first-child,
+	.teamMember:nth-child(2) {
+		margin-bottom: 100px;
+	}
+	.teamMember {
+		flex: 1 0 48%;
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.teamMember .socials {
+		gap: 3rem;
+	}
+}
+
+@media screen and (max-width: 1283px) {
+	.features {
+		padding-block: 6rem;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.parallax-mirror {
+		display: none;
+	}
+	header {
+		background-position: 75% !important;
+		background-attachment: scroll;
+	}
+
+	.resumeBanner,
+	.features,
+	.ourHistoryImage {
+		background-attachment: scroll;
+	}
+
+	.ourHistoryImage {
+		background-position: 80% !important;
+	}
+
+	.whyHorizon {
+		grid-template-columns: 1.5fr 1fr;
+	}
+
+	.whyHorizonCaracteristicas {
+		grid-column: span 3;
+		flex-flow: row wrap;
+		justify-content: space-evenly;
+		margin-bottom: 50px;
+	}
+
+	.whyHorizonContent {
+		width: 80%;
+	}
+
+	.whyHorizonContent * {
+		max-width: none !important;
+	}
+}
+
+@media screen and (max-width: 1150px) {
+	#nexSlide {
+		transform: translateY(-50%) translateX(15px);
+	}
+}
+
+@media screen and (max-width: 1080px) {
+	.aboutHorizon {
+		flex-flow: column;
+	}
+
+	.aboutHorizonContent {
+		margin-bottom: 100px;
+	}
+
+	.aboutHorizonGallery {
+		order: 1;
+		width: 100%;
+	}
+
+	.aboutHorizonGallery .photo {
+		display: block !important;
+	}
+
+	.aboutHorizonGallery {
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: 275px 275px;
+		grid-template-areas: 
+					"foto1 foto2 foto2 foto4"
+					"foto1 foto3 foto3 foto4";
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.whyHorizon {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.whyHorizonContent {
+		padding-left: 3rem;
+		width: 90%;
+	}
+
+	.whyHorizonImages .imagePrincipal {
+		height: 450px;
+		max-width: 320px;
+	}
+
+	.whyHorizonImages .imagePrincipal .imageSecundaria {
+		height: 225px;
+		width: 150px;
+		bottom: -4rem;
+		right: -2rem;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.topJourneysContent {
+		flex: 1.5 !important;
+	}
+
+	.topJourneys .swiper {
+		flex: 1;
+	}
+
+	.topJourneys #nexSlide {
+		transform: translateY(-50%) translateX(-20px);
+	}
+
+	.topJourneys .topJourneysContent p {
+		max-width: 320px;
+	}
+
+	.ourHistoryImage {
+		display: none;
+	}
+
+	.ourHistoryContent {
+		margin: 0;
+		padding: 0;
+		background: none;
+		transform: none;
+	}
+
+	.ourHistory {
+		width: 90%;
+		margin-inline: auto;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.topJourneys {
+		flex-flow: column;
+		width: 100%;
+	}
+
+	.topJourneysContent {
+		margin: 0 auto;
+		margin-bottom: 100px;
+		width: 90%;
+		text-align: center;
+	}
+
+	.topJourneysContent * {
+		max-width: none !important;
+	}
+
+	.topJourneysContent p {
+		max-width: 600px !important;
+		margin: 0 auto;
+	}
+
+	.swiper-slide {
+		width: 100% !important;
+	}
+
+	.swiper-slide a {
+		width: 100%;
+		aspect-ratio: 4 / 3;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		transition: all 0.4s ease-in-out;
+	}
+
+	.swiper a:hover {
+		filter: grayscale(0.7);
+		cursor: crosshair;
+		transform: scale(1.05);
+	}
+
+	#topTrip-barcelona {
+		background-image: url(../img/home/topTrip_barcelona_res.jpg);
+	}
+	#topTrip-london {
+		background-image: url(../img/home/topTrip_londres_res.jpg);
+	}
+	#topTrip-paris {
+		background-image: url(../img/home/topTrip_paris_res.jpg);
+	}
+	#topTrip-malaga {
+		background-image: url(../img/home/topTrip_malaga_res.jpg);
+	}
+
+	.swiper-slide a img {
+		display: none;
+	}
+
+	#nexSlide {
+		transform: translateY(-50%) translateX(-15px) !important;
+	}
+
+	/* ------------- banner count */
+	.resumeBanner {
+		row-gap: 4rem;
+	}
+
+	.resumeItem:last-child {
+		flex: 0 0 100%;
+	}
+
+	.resumeItem:first-child,
+	.resumeItem:nth-child(2) {
+		flex: 1;
+	}
+
+	/* gallery about */
+	.aboutHorizonGallery {
+		grid-template-areas: 
+					"foto1 foto1 foto4 foto4"
+					"foto1 foto1 foto4 foto4";
+	}
+
+	.aboutHorizonGallery .photo:nth-child(2),
+	.aboutHorizonGallery .photo:nth-child(3) {
+		display: none !important;
+	}
+
+	.aboutHorizonContent p {
+		margin-left: 0;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.whyHorizon {
+		width: 90%;
+		margin: 0 auto;
+		margin-bottom: var(--mb-sections);
+	}
+
+	.whyHorizonCaracteristicas {
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.whyHorizonImages {
+		grid-column: span 3;
+		gap: 1rem;
+		justify-content: space-between;
+		margin-bottom: 50px;
+	}
+
+	.whyHorizonContent {
+		grid-column: span 3;
+	}
+
+	.whyHorizonImages .imagePrincipal .imageSecundaria {
+		display: none;
+	}
+
+	.whyHorizonImages .imagePrincipal:hover {
+		transform: none;
+		cursor: crosshair;
+		filter: grayscale(0.7);
+	}
+
+	.whyHorizon .imagePrincipal {
+		transform: none;
+	}
+
+	.whyHorizonContent {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.p2 {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.teamMember:not(.teamMember:last-child) {
+		margin-bottom: 100px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.whyHorizonCaracteristicas {
+		justify-content: center;
+		gap: 2rem;
+	}
+
+	.whyHorizonImages {
+		flex-flow: column;
+		width: 100%;
+	}
+
+	.whyHorizonImages .imagePrincipal:first-child {
+		background-position: center 80%;
+	}
+
+	.whyHorizonImages .imagePrincipal {
+		flex: 1;
+		min-height: 300px;
+		min-width: 100%;
+	}
+}
+
+@media screen and (max-width: 525px) {
+	.topJourneys .swiper .swiper-slide a {
+		aspect-ratio: 3 / 4;
+	}
+
+	/* -------------- banner count */
+	.resumeBanner {
+		flex-flow: column;
+		padding-block: 5rem;
+	}
+	.resumeItem {
+		margin: 0;
+		flex: 1;
+	}
+}
+
+@media screen and (max-width: 495px) {
+	.aboutHorizonGallery {
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+					'foto1'
+					'foto4';
+		grid-template-rows: 480px 480px;
+	}
+
+	.aboutHorizonGallery .photo {
+		grid-row: auto !important;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	header {
+		background-position: 63% !important;
+	}
+	.headerContent {
+		text-align: center;
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		align-content: center;
+	}
+}

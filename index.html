@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon Travel</title>
+    <!-- Icono -->
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+    <!-- JSWipper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Meta identificacion de la página -->
+    <meta name="page-identity" content="home">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home_style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/1e6ab72603.js" crossorigin="anonymous"></script>
+    <!-- SwiperJS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- --------- HERO ---------- -->
+    <header data-parallax="scroll" data-image-src="img/home/hero_home.jpg" data-speed="0.2">
+        <div class="menu" data-aos="fade-down" data-aos-duration="800">
+            <div class="logo">
+                <a href="index.html"><img src="img/horizon.svg" alt="Page logo"></a>
+            </div>
+            <nav id="menuContainer">
+                <label id="menu-toggle" class="hamburger menu-toggle">
+                    <input type="checkbox">
+                    <svg viewBox="0 0 32 32">
+                        <path class="line line-top-bottom"
+                            d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                        </path>
+                        <path class="line" d="M7 16 27 16"></path>
+                    </svg>
+                </label>
+                <ul class="list-nav">
+                    <li class="nav-item activeMenu"><a href="#">Home</a></li>
+                    <li class="nav-item"><a href="destinations.html">Destinations</a></li>
+                    <li class="nav-item"><a href="journey.html">Journeys</a></li>
+                    <li class="nav-item"><a href="contact.html">Contact</a></li>
+                    <li class="nav-button"><a href=""><span>Travel</span> | <img src="img/icons/mapa.svg" alt=""></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="headerContent">
+            <h2 class="heroSubtitle" data-aos="fade-right" data-aos-duration="800">Relax & Enjoy</h2>
+            <h1 class="heroTitle" data-aos="fade-right" data-aos-duration="800">It's Time To <span>Adventure</span></h1>
+            <div class="heroButton" data-aos="fade-up" data-aos-duration="1000">
+                <a href="journey.html" class="heroBtn">Take a journey</a>
+                <a href="journey.html"><i class="fa-solid fa-play"></i></a>
+            </div>
+        </div>
+    </header>
+    <!-- --------------- WHY HORIZON ----------- -->
+    <section class="whyHorizon">
+        <div class="whyHorizonTitle">
+            <h3 class="sectionSubtitle">What make us different</h3>
+            <h2 class="sectionTitle">Why Horizon</h2>
+        </div>
+        <div class="whyHorizonCaracteristicas">
+            <div class="caracteristica">
+                <div class="icono"></div>
+                <h4>Unforgettable experiences</h4>
+                <p>Our trips are designed for the greatest enjoyment imaginable.</p>
+            </div>
+            <div class="caracteristica">
+                <div class="icono"></div>
+                <h4>Familiar and close</h4>
+                <p>We offer a familiar and close treatment in the whole of your realtionship.</p>
+            </div>
+        </div>
+        <div class="whyHorizonImages" >
+            <div class="imagePrincipal">
+                <div class="imageSecundaria"></div>
+            </div>
+            <div class="imagePrincipal p2"></div>
+        </div>
+        <div class="whyHorizonContent">
+            <h3>Horizon is a travel agency created in Malaga with the intention of offering a unique experience.</h3>
+            <p class="firstChild">
+                Our team is united by a passion for exploration and a belief that the right kind of travel can make the
+                world a better place. We are available 24 hours a day to meet your travel needs and issues.
+            </p>
+            <p>
+                We are committed to offering you the utmost support throughout your journey with us!
+            </p>
+        </div>
+    </section>
+    <!-- --------------- TOP JOURNEYS ----------- -->
+    <section class="topJourneys">
+        <div class="topJourneysContent">
+            <h3 class="sectionSubtitle">We choose for you</h3>
+            <h2 class="sectionTitle">Top Journeys</h2>
+            <p class="firstChild">
+                At Horizon we have several travel plans which are designed for enjoyment disconnection and many other
+                features that make them unique.
+            </p>
+            <p>
+                We have several of them that are our favorites, take a look at them!
+            </p>
+        </div>
+        <div class="swiper topJourneysSwiper">
+            <button id="nexSlide"><i class="fas fa-arrow-right"></i></button>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="journey.html#barcelona" id="topTrip-barcelona">
+                        <img src="img/home/topTrip_barcelona.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="journey.html#london" id="topTrip-london">
+                        <img src="img/home/topTrip_londres.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="journey.html#paris" id="topTrip-paris">
+                        <img src="img/home/topTrip_paris.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="journey.html#malaga" id="topTrip-malaga">
+                        <img src="img/home/topTrip_malaga.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+    <!-- --------------- ABOUT HORIZON ------------ -->
+    <section class="aboutHorizon">
+        <div class="aboutHorizonGallery">
+            <div class="photo">
+                <div class="img"></div>
+            </div>
+            <div class="photo">
+                <div class="img"></div>
+            </div>
+            <div class="photo">
+                <div class="img"></div>
+            </div>
+            <div class="photo">
+                <div class="img"></div>
+            </div>
+        </div>
+        <div class="aboutHorizonContent">
+            <h3 class="sectionSubtitle">You should know about us</h3>
+            <h2 class="sectionTitle">About Horizon</h2>
+            <p>
+                Horizon is an international travel agency that is passionate about
+                discovering new horizons. Our team of experts is dedicated to
+                helping you plan the perfect trip, whether you're looking for a
+                relaxing beach vacation or an adventurous expedition. We offer a
+                wide range of travel services, including flights, hotels, rental cars,
+                and tours. We also offer a variety of travel insurance options to
+                protect you in case of any unexpected events.
+            </p>
+            <p>
+                We understand that planning a trip can be stressful, so we make
+                it our goal to take care of everything for you. We'll work with you
+                to create a personalized itinerary that fits your interests and
+                budget. We'll also book all of your travel arrangements, so you can
+                relax and enjoy your trip.
+            </p>
+            <p>
+                If you're looking for a travel agency that can help you discover
+                new horizons, Horizon is the perfect choice. We'll make sure your
+                trip is everything you've ever dreamed of.
+            </p>
+        </div>
+    </section>
+    <!-- --------------- RESUME BANNER ------------- -->
+    <section class="resumeBanner" data-parallax="scroll" data-image-src="img/home/resumeBanner.jpg" data-speed="0.3">
+        <div class="resumeItem">
+            <h3>5</h3>
+            <h2>Journeys</h2>
+        </div>
+        <div class="resumeItem">
+            <h3>200</h3>
+            <h2>Clients trust us</h2>
+        </div>
+        <div class="resumeItem">
+            <h3>3</h3>
+            <h2>Countries</h2>
+        </div>
+    </section>
+    <!-- --------------- OUT HISTORY --------------- -->
+    <section class="ourHistory">
+        <div class="ourHistoryContent">
+            <h3 class="sectionSubtitle">Get to know our roots</h3>
+            <h2 class="sectionTitle">Our History</h2>
+            <p>
+                Horizon Travel Agency is based in Malaga and has more than 5 years of
+                experience in the sector. It was founded in 2015 by a group of professionals with
+                extensive experience in the world of tourism. Horizon specialises in organising
+                tailor-made trips for both individuals and companies.
+            </p>
+            <p>
+                Horizon has established itself as one of the leading travel agencies in Malaga
+                thanks to its commitment to quality and customer service. The agency has won
+                several awards, including the Tourist Excellence Award from the Junta de
+                Andalucía in 2019.
+            </p>
+            <p>
+                Today, Horizon is one of the most important travel agencies in Spain. The agency
+                has a team of more than 50 professionals and offers a wide range of services to
+                its clients. Horizon is committed to quality and customer service, and has won
+                several awards for excellence.
+            </p>
+        </div>
+        <div class="ourHistoryImage" data-parallax="scroll" data-image-src="img/home/history2.jpg"></div>
+    </section>
+    <!-- --------------- OUR CARACTERISTICAS --------- -->
+    <section class="features" data-parallax="scroll" data-image-src="img/home/caracteristicas.jpg" data-speed="0.3">
+        <div class="feature">
+            <div class="icono"></div>
+            <h2>Creative</h2>
+            <p>
+                We invent, we create and we advise.
+                You won't find our plans anywhere
+                else!
+            </p>
+        </div>
+        <div class="feature">
+            <div class="icono"></div>
+            <h2>Proffesional</h2>
+            <p>
+                We are sure that we are the best.
+                100% sure to give you a unique
+                experience.
+            </p>
+        </div>
+        <div class="feature">
+            <div class="icono"></div>
+            <h2>Adventurers</h2>
+            <p>
+                We put ourselves in your shoes. We
+                are the most travelled people in the
+                world and we share your passion.
+            </p>
+        </div>
+    </section>
+    <!-- --------------- OUR TEAM -------------- -->
+    <section class="ourTeam">
+        <div class="ourTeamTitle">
+            <h3 class="sectionSubtitle">Know who we are</h3>
+            <h2 class="sectionTitle">Our Team</h2>
+        </div>
+        <div class="teamCards">
+            <div class="teamMember">
+                <h3 class="name">Sarah Cameron</h3>
+                <div class="image">
+                    <div class="img"></div>
+                </div>
+                <div class="socials">
+                    <div class="social"></div>
+                    <div class="social"></div>
+                    <div class="social"></div>
+                </div>
+                <h4 class="rol">Guide</h4>
+            </div>
+            <div class="teamMember">
+                <h3 class="name">Jefrey Smith</h3>
+                <div class="image">
+                    <div class="img"></div>
+                </div>
+                <div class="socials">
+                    <div class="social"></div>
+                    <div class="social"></div>
+                    <div class="social"></div>
+                </div>
+                <h4 class="rol">Planner</h4>
+            </div>
+            <div class="teamMember">
+                <h3 class="name">Luna Clarck</h3>
+                <div class="image">
+                    <div class="img"></div>
+                </div>
+                <div class="socials">
+                    <div class="social"></div>
+                    <div class="social"></div>
+                    <div class="social"></div>
+                </div>
+                <h4 class="rol">Manager</h4>
+            </div>
+            <div class="teamMember">
+                <h3 class="name">Jack Ross</h3>
+                <div class="image">
+                    <div class="img"></div>
+                </div>
+                <div class="socials">
+                    <div class="social"></div>
+                    <div class="social"></div>
+                    <div class="social"></div>
+                </div>
+                <h4 class="rol">CEO</h4>
+            </div>
+        </div>
+    </section>
+    <!-- ----------- ---- NEWSLETTER -------------- -->
+    <section class="newsletter">
+        <h2>Subscribe to our newsletter</h2>
+        <p>
+            Subscribe to receive news of new and unique travel plans where you will live
+            incredible adventures.
+        </p>
+        <div class="subscribeForm">
+            <input type="email" name="email" class="emailInput" placeholder="Email address...">
+            <button>Subscribe</button>
+        </div>
+    </section>
+    <!-- --------------- FOOTER ----------------- -->
+    <footer>
+        <div class="footerColumns">
+            <div class="footerColumn">
+                <a href="index.html"><img src="img/horizon.svg" alt="Page logo"></a>
+            </div>
+            <div class="footerColumn">
+                <h2>Pages</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="journey.html">Journeys</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footerColumn">
+                <h2>Top journeys</h2>
+                <ul>
+                    <li><a href="journey.html#london">London</a></li>
+                    <li><a href="journey.html#barcelona">Barcelona</a></li>
+                    <li><a href="journey.html#malaga">Malaga</a></li>
+                    <li><a href="journey.html#paris">Paris</a></li>
+                </ul>
+            </div>
+            <div class="footerColumn">
+                <h2>Contact</h2>
+                <ul>
+                    <li>+34 954 45 78 85</li>
+                    <li>C/ Comedias, 7</li>
+                    <li>contact@horizon.es</li>
+                </ul>
+            </div>
+        </div>
+        <div class="subfooter">
+            <span>&copy;2024
+                <a href="https://arielguerrero.es" target="_blank">arielguerrero.es</a>
+                <span class="rights">| All rights reserved.</span></span>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="js/main.js"></script>
+    <!-- Parallax library -->
+    <script src="js/parallax.min.js"></script>
+</body>
+
+</html>
