@@ -274,7 +274,7 @@ header {
 	content: "";
 	width: 112%;
 	height: 70%;
-	background-color: var(--detail-color);
+	background-color: #cfd7f0;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -285,7 +285,7 @@ header {
 }
 
 .journey:first-child .image {
-	background-image: url(../img/contact/london_thumb.jpg);
+	background-image: url(../img/contact/casamaria.png);
 }
 .journey:nth-child(2) .image {
 	background-image: url(../img/contact/paris_thumb.jpg);
@@ -360,7 +360,7 @@ header {
 }
 
 .destination:first-child .image {
-	background-image: url(../img/contact/spain_thumb.jpg);
+	background-image: url(../img/contact/casamaria.png);
 }
 .destination:nth-child(2) .image {
 	background-image: url(../img/contact/england_thumb.jpg);
@@ -389,7 +389,7 @@ header {
 	}
 	header {
 		background-attachment: scroll;
-		background-image: url(../img/contact/hero_contact.jpg);
+		background-image: url(../img/contact/uno.gif);
 	}
 	.banner {
 		background-attachment: scroll;

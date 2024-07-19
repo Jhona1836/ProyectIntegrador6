@@ -246,8 +246,8 @@ header {
   font-family: Quicksand, Montserrat, sans-serif;
   font-size: var(--subtitle-hero-size);
   font-weight: var(--quick-medium);
-  color: var(--detail-color);
-  margin-bottom: 1.5rem;
+  color: #232a3d;;
+  margin-bottom: 1.7rem;
 }
 
 .dest {
@@ -400,7 +400,7 @@ header {
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: var(--jose-regular);
-  background-color: var(--detail-color);
+  background-color:#55aee1;
   padding: 0.5rem 1.1rem;
   border-radius: 2px;
   transition: all 0.2s ease-in-out;
@@ -417,7 +417,7 @@ header {
 }
 
 .nav-button a:hover {
-  background-color: rgba(251, 138, 0, 0.888);
+  background-color: rgb(74, 138, 202);
 }
 
 .nav-button a img {

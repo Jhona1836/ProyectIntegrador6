@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Horizon Travel</title>
     <!-- Icono -->
-    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="img/contact/logo.png" type="image/x-icon">
     <!-- Meta identificacion de la página -->
     <meta name="page-identity" content="contact">
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles_contacto.css">
     <link rel="stylesheet" href="css/contact_style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Font awesome -->
@@ -19,7 +19,7 @@
 
 <body>
     <!-- --------- HERO ---------- -->
-    <header data-parallax="scroll" data-image-src="img/contact/hero_contact.jpg" data-speed="0.2">
+    <header data-parallax="scroll" data-image-src="img/contact/uno.gif" data-speed="0.2">
         <div class="menu" data-aos="fade-down" data-aos-duration="800">
             <div class="logo">
                 <a href="index.html"><img src="img/horizon.svg" alt="Page logo"></a>
@@ -38,15 +38,16 @@
                     <li class="nav-item"><a href="index.html">Home</a></li>
                     <li class="nav-item"><a href="destinations.html">Destinations</a></li>
                     <li class="nav-item"><a href="journey.html">Journeys</a></li>
-                    <li class="nav-item activeMenu"><a href="#">Contact</a></li>
-                    <li class="nav-button"><a href=""><span>Travel</span> | <img src="img/icons/mapa.svg" alt=""></a>
+                    <li class="nav-item activeMenu"><a href="#">Contact0</a></li>
+                    <li class="nav-button"><a href=""><span>PixelCraft</span> | <img src="img/icons/mapa.svg" alt=""></a>
                     </li>
                 </ul>
             </nav>
         </div>
         <div class="headerContent">
-            <h2 class="heroSubtitle" data-aos="fade-right" data-aos-duration="800">Contact & Information</h2>
-            <h1 class="heroTitle" data-aos="fade-right" data-aos-duration="800">How Can We <span>Help You?</span></h1>
+            <h2 class="heroSubtitle" data-aos="fade-right" data-aos-duration="800">Contacto & Informarmacion</h2>
+            <h1 class="heroTitle" data-aos="fade-right" data-aos-duration="800">¡Contrátanos
+                y caminemos al éxito!</h1>
         </div>
     </header>
 
@@ -55,42 +56,95 @@
         <!-- ---------------- CONTACT INFO --------------- -->
         <div class="contactInfo">
             <div class="title">
-                <h3 class="sectionSubtitle">ALL YOU NEED TO KNOW</h3>
-                <h2 class="sectionTitle">Contact Information</h2>
+                <h3 class="sectionSubtitle">TODO LO QUE NECESITAS SABER</h3>
+                <h2 class="sectionTitle">Contacto & Informacion</h2>
             </div>
             <div class="content">
                 <p>
-                    At <span class="dest">Horizon Travel</span> we pride ourselves on always being on hand to
-                    answer any queries or questions our <span class="dest">valued users</span> may have. We
-                    are here to make your travel experience <span class="dest">unforgettable and hassle-free</span>.
+                    En <span class="dest">PixelCraft</span> Nos enorgullecemos de estar siempre disponibles para
+                    responder cualquier consulta o pregunta que nuestros <span class="dest">valorados usuarios</span> puedan tener. Nosotros
+                    estamos aqui para lograr lo que ninguna otra<span class="dest">  puede lograr.</span>.
                 </p>
                 <div class="line"></div>
                 <ul>
-                    <li><i class="fa-solid fa-phone"></i>+34 954 45 78 85</li>
-                    <li><i class="fa-solid fa-location-dot"></i>C/ COMEDIAS, 7</li>
-                    <li><i class="fa-solid fa-envelope"></i>CONTACT@HORIZON.ES</li>
+                    <li><i class="fa-solid fa-phone"></i>+52 2821607245</li>
+                    <li><i class="fa-solid fa-location-dot"></i>Chilchotla, puebla</li>
+                    <li><i class="fa-solid fa-envelope"></i>PixelCraft@agencia.com</li>
                 </ul>
             </div>
         </div>
         <!-- ---------------- CONTACT FORM --------------- -->
         <div class="contactForm">
             <div class="title">
-                <h3 class="sectionSubtitle">DROP A MESSAGE</h3>
-                <h2 class="sectionTitle">Get In Touch</h2>
+                <h3 class="sectionSubtitle">Enviar un mensaje</h3>
+                <h2 class="sectionTitle">Pongase en contacto</h2>
             </div>
-            <form action="">
-                <input type="text" name="name" id="name" placeholder="Your name">
-                <input type="email" name="email" id="email" placeholder="Your email">
-                <input type="tel" name="phone" id="phone" placeholder="Your phone">
-                <textarea name="message" id="message" placeholder="Your message"></textarea>
-                <button type="button">SEND</button>
+            <form id="registrationForm" action="php/conexion.php" method="POST">
+                <input type="text" name="name" id="name" placeholder="Tu nombre" required minlength="3" maxlength="50">
+                <input type="email" name="email" id="email" placeholder="Tu correo" required>
+                <input type="tel" name="phone" id="phone" placeholder="Tu telefono" required pattern="[0-9]{10}">
+                <input type="text" name="address" id="address" placeholder="Tu direccion" required minlength="5" maxlength="100">
+                <textarea name="message" id="message" placeholder="Tu mensaje" required minlength="10" maxlength="500"></textarea>
+                <button type="submit">Enviar</button>
             </form>
+            
+            <script>
+            document.getElementById('registrationForm').addEventListener('submit', function(event) {
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const phone = document.getElementById('phone').value;
+                const address = document.getElementById('address').value;
+                const message = document.getElementById('message').value;
+            
+                const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+                const phonePattern = /^[0-9]{10}$/;
+            
+                if (!emailPattern.test(email)) {
+                    alert("Por favor, introduce un correo válido.");
+                    event.preventDefault();
+                    return false;
+                }
+            
+                if (!phonePattern.test(phone)) {
+                    alert("Por favor, introduce un número de teléfono válido.");
+                    event.preventDefault();
+                    return false;
+                }
+            
+                if (name.length < 3 || name.length > 50) {
+                    alert("El nombre debe tener entre 3 y 50 caracteres.");
+                    event.preventDefault();
+                    return false;
+                }
+            
+                if (address.length < 5 || address.length > 100) {
+                    alert("La dirección debe tener entre 5 y 100 caracteres.");
+                    event.preventDefault();
+                    return false;
+                }
+            
+                if (message.length < 10 || message.length > 500) {
+                    alert("El mensaje debe tener entre 10 y 500 caracteres.");
+                    event.preventDefault();
+                    return false;
+                }
+            
+                return true;
+            });
+            </script>
+            
+            
         </div>
+    </section>
+    <section class="workWithUs">
+        <div class="title">
+            <h1 class="sectionSubtitle">Donde se ubica</h1>
+            <h2 class="sectionTitle">PixelCraft</h2>
     </section>
     <!-- ---------------- MAP --------------- -->
     <section class="map">
         <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.9915417739867!2d-4.424345523469182!3d36.72276437226941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f7be3ed69325%3A0x1e79176cd7a4a305!2sC.%20Comedias%2C%207%2C%20Distrito%20Centro%2C%2029008%20M%C3%A1laga!5e0!3m2!1sen!2ses!4v1706729752942!5m2!1sen!2ses"
+            src="https://www.google.com.mx/maps/@19.2531361,-97.2060782,14z?entry=ttu"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
@@ -99,30 +153,19 @@
         <div class="title">
             <h3 class="sectionSubtitle">JOIN HOIRZON TEAM</h3>
             <h2 class="sectionTitle">Work With Us</h2>
-        </div>
-        <div class="content">
-            <form>
-                <input type="text" name="name" id="name" placeholder="Your name">
-                <input type="email" name="email" id="email" placeholder="Your email">
-                <input type="tel" name="phone" id="phone" placeholder="Your phone">
-                <input type="text" name="speciality" id="speciality" placeholder="Your speciality">
-                <textarea name="message" id="message" placeholder="Your message"></textarea>
-                <button type="button">APPLY</button>
-            </form>
-        </div>
     </section>
     <!-- ---------------- BANNER --------------- -->
-    <section class="banner" data-parallax="scroll" data-image-src="img/contact/banner_contact.jpg" data-speed="0.2" ></section>
+    <section class="banner" data-parallax="scroll" data-image-src="img/contact/cuatro.jpg" data-speed="0.2" ></section>
     <!-- ---------------- FEATURED JOURNEYS --------------- -->
     <section class="featuredJourneys">
         <div class="title">
-            <h3 class="sectionSubtitle">RATED BY OUR CLIENTS</h3>
-            <h2 class="sectionTitle">Featured Journeys</h2>
+            <h3 class="sectionSubtitle">Únete al éxito: más de 500 clientes ya han impulsado su negocio con PixelCraft.</h3>
+            <h2 class="sectionTitle">¡Sé el siguiente!</h2>
         </div>
         <div class="journeys">
             <div class="journey">
-                <a href="journey.html#london"><div class="image"></div></a>
-                <span>LONDON</span>
+                <a href="img/contact/casamaria.png"><div class="image"></div></a>
+                <span>Casa Maria</span>
             </div>
             <div class="journey">
                 <a href="journey.html#paris"><div class="image"></div></a>
@@ -134,29 +177,6 @@
             </div>
         </div>
     </section>
-    <!-- ---------------- FEATURED DESTINATIONS --------------- -->
-    <section class="featuredDestinations">
-        <div class="title">
-            <h3 class="sectionSubtitle">RATED BY OUR CLIENTS</h3>
-            <h2 class="sectionTitle">Featured Destinations</h2>
-        </div>
-        <div class="destinations">
-            <div class="destination">
-                <a href="destinations.html#spain"><div class="image"></div></a>
-                <span>SPAIN</span>
-            </div>
-            <div class="destination">
-                <a href="destinations.html#england"><div class="image"></div></a>
-                <span>UNITED KINGDOM</span>
-            </div>
-            <div class="destination">
-                <a href="destinations.html#france"><div class="image"></div></a>
-                <span>FRANCE</span>
-            </div>
-        </div>
-    </section>
-
-
     <!-- ----------- ---- NEWSLETTER -------------- -->
     <section class="newsletter">
         <h2>Subscribe to our newsletter</h2>
@@ -194,17 +214,17 @@
                 </ul>
             </div>
             <div class="footerColumn">
-                <h2>Contact</h2>
+                <h2>Contact0</h2>
                 <ul>
-                    <li>+34 954 45 78 85</li>
-                    <li>C/ Comedias, 7</li>
-                    <li>contact@horizon.es</li>
+                    <li>+52 282160724</li>
+                    <li>Chilchotla, puebla</li>
+                    <li>PixelCraft@agencia.es</li>
                 </ul>
             </div>
         </div>
         <div class="subfooter">
             <span>&copy;2024
-                <a href="https://arielguerrero.es" target="_blank">arielguerrero.es</a>
+                <a href="https://arielguerrero.es" target="_blank">PixelCraft</a>
                 <span class="rights">| All rights reserved.</span></span>
         </div>
     </footer>
