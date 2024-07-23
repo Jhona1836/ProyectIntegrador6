@@ -158,11 +158,13 @@ table {
   box-sizing: border-box;
 }
 
+
+ /*En este apartaso damos ajustes predeterminados para algunas secciones del html */
 :root {
   /* Colors */
-  --primary-color: rgb(40, 40, 40);
+  --primary-color: black;
   --secondary-color: rgba(255, 255, 255, 0.9);
-  --detail-color: rgb(251, 140, 0);
+  --detail-color: darkgreen;
 
   /* Sizes */
   --title-hero-size: clamp(3.5rem, 2.223rem + 5.447vw, 7.5rem);
@@ -246,6 +248,8 @@ header {
   font-family: Quicksand, Montserrat, sans-serif;
   font-size: var(--subtitle-hero-size);
   font-weight: var(--quick-medium);
+  color:darkgreen;
+  margin-bottom: 1.5rem;
   color: #232a3d;;
   margin-bottom: 1.7rem;
 }
