@@ -162,7 +162,7 @@ table {
   /* Colors */
   --primary-color: rgb(19, 37, 37);
   --secondary-color: rgba(244, 237, 237, 0.9);
-  --detail-color: rgb(251, 140, 0);
+  --detail-color: rgb(113, 215, 73);
 
   /* Sizes */
   --title-hero-size: clamp(3.5rem, 2.223rem + 5.447vw, 7.5rem);
@@ -234,8 +234,9 @@ header {
 .heroTitle {
   font-family: "Sansation Bold", Montserrat, sans-serif;
   font-size: var(--title-hero-size);
-  color: var(--primary-color);
+  color: #ffffffda;;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .heroTitle span {
@@ -246,8 +247,9 @@ header {
   font-family: Quicksand, Montserrat, sans-serif;
   font-size: var(--subtitle-hero-size);
   font-weight: var(--quick-medium);
-  color: #ffffff;;
+  color: #87ea8e;;
   margin-bottom: 1.7rem;
+  text-align: center;
 }
 
 .dest {
@@ -273,7 +275,7 @@ header {
 }
 
 .sticky {
-  background-color: rgb(216, 236, 238);
+  background-color: rgb(227, 236, 228);
   padding-block: 0;
   width: 100%;
   margin: 0;
@@ -401,7 +403,7 @@ header {
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: var(--jose-regular);
-  background-color:#e69461;
+  background-color:#40b837;
   padding: 0.5rem 1.1rem;
   border-radius: 2px;
   transition: all 0.2s ease-in-out;
@@ -418,7 +420,7 @@ header {
 }
 
 .nav-button a:hover {
-  background-color: rgb(198, 92, 71);
+  background-color: rgb(35, 173, 63);
 }
 
 .nav-button a img {

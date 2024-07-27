@@ -288,10 +288,10 @@ header {
 	background-image: url(../img/contact/casamaria.png);
 }
 .journey:nth-child(2) .image {
-	background-image: url(../img/contact/paris_thumb.jpg);
+	background-image: url(../img/contact/ropa.jpg);
 }
 .journey:last-child .image {
-	background-image: url(../img/contact/barcelona_thumb.jpg);
+	background-image: url(../img/contact/tecnologia.jpg);
 }
 
 .journey span {
@@ -363,10 +363,10 @@ header {
 	background-image: url(../img/contact/casamaria.png);
 }
 .destination:nth-child(2) .image {
-	background-image: url(../img/contact/england_thumb.jpg);
+	background-image: url(../img/contact/ropa.jpg);
 }
 .destination:last-child .image {
-	background-image: url(../img/contact/france_thumb.jpg);
+	background-image: url(../img/contact/tecnologia.jpg);
 }
 
 .destination span {
