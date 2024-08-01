@@ -359,7 +359,8 @@ header {
 }
 
 .logo {
-  width: 150px;
+  width: 50px;
+  width:auto;
 }
 
 .list-nav {
