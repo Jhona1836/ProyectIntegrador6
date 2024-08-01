@@ -359,7 +359,7 @@ header {
 }
 
 .logo {
-  width: 50px;
+  
   width:auto;
 }
 
@@ -1361,6 +1361,7 @@ footer {
 .subfooter span a:hover {
   color: var(--detail-color);
 }
+
 
 /* -------------- MEDIA QUERIES ----------- */
 @media screen and (max-width: 1450px) {
