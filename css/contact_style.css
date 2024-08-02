@@ -294,6 +294,14 @@ header {
 	background-image: url(../img/contact/tecnologia.jpg);
 }
 
+.logo img {
+    width: 40%; 
+    height: auto; 
+    max-width: 150px; 
+    display: block; 
+    margin: 0 auto;
+}
+
 .journey span {
 	font-family: "Sansation", sans-serif;
 	font-size: var(--contact-cards-size);

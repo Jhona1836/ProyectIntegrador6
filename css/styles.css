@@ -1096,7 +1096,14 @@ header {
 }
 
 .logo {
-  width: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 60px; 
+  height: auto;
+  margin-right: 10px; 
 }
 
 .list-nav {

@@ -57,12 +57,12 @@ header {
 }
 
 .spainImages .image:first-child {
-	background-image: url(../img/destinations/spain1.jpg);
+	background-image: url(../img/destinations/fondo1.jpg);
 }
 
 .spainImages .image:nth-child(2) {
 	align-self: flex-start;
-	background-image: url(../img/destinations/spain2.jpg);
+	background-image: url(../img/destinations/acrividad.jpg);
 }
 
 .spainContent .content {
@@ -184,19 +184,19 @@ header {
 }
 
 .spainActivities .activity:first-child .img {
-	background-image: url(../img/destinations/pais1act1.jpg);
+	background-image: url(../img/destinations/act2.jpg);
 }
 .spainActivities .activity:nth-child(2) .img {
-	background-image: url(../img/destinations/pais1act2.jpg);
+	background-image: url(../img/destinations/act3.jpg);
 }
 .spainActivities .activity:nth-child(3) .img {
-	background-image: url(../img/destinations/pais1act3.jpg);
+	background-image: url(../img/destinations/act4.webp);
 }
 .spainActivities .activity:nth-child(4) .img {
-	background-image: url(../img/destinations/pais1act4.jpg);
+	background-image: url(../img/destinations/act5.jpg);
 }
 .spainActivities .activity:last-child .img {
-	background-image: url(../img/destinations/pais1act5.jpg);
+	background-image: url(../img/destinations/act6.jpg);
 }
 
 /* ---------------- SPAIN MONUMENTS ------------ */
@@ -242,10 +242,10 @@ header {
 }
 
 .spainMonuments .monument .image:first-child .img {
-	background-image: url(../img/destinations/monument1Spain.jpg);
+	background-image: url(../img/destinations/act11.jpg);
 }
 .spainMonuments .monument .image:last-child .img {
-	background-image: url(../img/destinations/monument2Spain.jpg);
+	background-image: url(../img/destinations/act8.jpg);
 }
 
 .monument .content {
@@ -363,12 +363,12 @@ header {
 }
 
 .englandImages .image:first-child {
-	background-image: url(../img/destinations/england1.jpg);
+	background-image: url(../img/destinations/act9.jpg);
 }
 
 .englandImages .image:nth-child(2) {
 	align-self: flex-start;
-	background-image: url(../img/destinations/england2.jpg);
+	background-image: url(../img/destinations/actv10.jpg);
 }
 
 .englandContent .content {
@@ -812,4 +812,112 @@ header {
 		align-items: center;
 		align-content: center;
 	}
+}
+/* --------------------------- TEAM STYLES ------------------------ */
+.ourTeam {
+	width: 100%;
+	text-align: center;
+	margin-bottom: var(--mb-sections);
+}
+
+.ourTeamTitle {
+	margin-bottom: 6.25rem;
+}
+
+.teamCards {
+	font-size: var(--selected-text);
+	font-family: "Sansation", sans-serif;
+	text-transform: uppercase;
+	color: var(--primary-color);
+	letter-spacing: 0.2rem;
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: start;
+	align-content: start;
+	gap: 2rem;
+}
+
+.teamMember .image {
+	width: 18.75rem;
+	height: 23.125rem;
+	margin-bottom: 1.563rem;
+	overflow: hidden;
+}
+
+.teamMember .image .img {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	transition: all 0.4s ease-in-out;
+}
+
+.teamMember .image:hover .img {
+	cursor: crosshair;
+	filter: grayscale(0.8);
+	transform: scale(1.05);
+}
+
+.teamMember:first-child .image .img {
+	background-image: url(../img/home/teamFt1.jpg);
+}
+.teamMember:nth-child(2) .image .img {
+	background-image: url(../img/home/teamFt4.jpg);
+}
+.teamMember:nth-child(3) .image .img {
+	background-image: url(../img/home/teamFt2.jpg);
+}
+.teamMember:last-child .image .img {
+	background-image: url(../img/home/teamFt3.jpg);
+}
+
+.teamMember .name {
+	margin-bottom: 3.125rem;
+}
+
+.teamMember .socials {
+	margin: 0 auto;
+	margin-bottom: 2.5rem;
+	max-width: 85%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: center;
+}
+
+.teamMember .socials .social {
+	height: 20px;
+	width: 25px;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+.teamMember .socials .social:hover {
+	transform: rotate(5deg) translateY(-2px) scale(1.01);
+}
+
+.teamMember .socials .social:first-child {
+	background-image: url(../img/icons/fb_ico.svg);
+}
+.teamMember .socials .social:nth-child(2) {
+	background-image: url(../img/icons/tw_ico.svg);
+}
+.teamMember .socials .social:last-child {
+	background-image: url(../img/icons/insta_ico.svg);
+}
+.teamMember .socials .social:first-child:hover {
+	background-image: url(../img/icons/fb_o_ico.svg);
+}
+.teamMember .socials .social:nth-child(2):hover {
+	background-image: url(../img/icons/tw_o_ico.svg);
+}
+.teamMember .socials .social:last-child:hover {
+	background-image: url(../img/icons/insta_o_ico.svg);
 }
