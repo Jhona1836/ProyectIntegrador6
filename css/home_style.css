@@ -1031,6 +1031,7 @@ header {
 	}
 }
 
+
 @media screen and (max-width: 640px) {
 	.whyHorizonCaracteristicas {
 		justify-content: center;
@@ -1101,3 +1102,4 @@ header {
 	font-weight: bold;
 	color: black;
 }
+

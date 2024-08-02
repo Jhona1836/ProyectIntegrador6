@@ -359,7 +359,8 @@ header {
 }
 
 .logo {
-  width: 150px;
+  
+  width:auto;
 }
 
 .list-nav {
@@ -1367,6 +1368,7 @@ footer {
 .subfooter span a:hover {
   color: var(--detail-color);
 }
+
 
 /* -------------- MEDIA QUERIES ----------- */
 @media screen and (max-width: 1450px) {
