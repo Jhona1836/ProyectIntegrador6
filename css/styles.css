@@ -286,6 +286,10 @@ header {
   animation: 0.5s ease forwards slideDown;
 }
 
+.logo{
+
+}
+
 .menu.show {
   transition: all 200ms ease-in-out;
   right: 0;
@@ -358,10 +362,7 @@ header {
   top: 1rem;
 }
 
-.logo {
-  
-  width:auto;
-}
+
 
 .list-nav {
   list-style-type: none;
@@ -1102,8 +1103,8 @@ header {
 }
 
 .logo img {
-  width: 60px; 
-  height: auto;
+  width: 450px; 
+  height: 60;
   margin-right: 10px; 
 }
 
