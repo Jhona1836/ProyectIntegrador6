@@ -53,15 +53,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["action"])) {
     <title>Panel de Administrador - PixelCraft</title>
     <link rel="stylesheet" href="php.css">
 </head>
+<div class="header">
+        <div class="logo">PixelCraft</div>
+        <div class="admin-info">
+            <div class="admin-name">Administrador: Oscar Zavaleta</div>
+            <div class="admin-icon">
+                <i class="fas fa-user-circle"></i>
+            </div>
+        </div>
+    </div>
 <body>
     <div class="sidebar">
-        <h2>PixelCraft</h2>
-        <a href="#usuarios">Usuarios Registrados</a>
-        <a href="#">Reportes</a>
-        <a href="#">Configuración</a>       
+        <a href="#usuarios">Citas registradas</a>
+        <a href="../php/detallesservicio.php">Clientes registrados</a>
+        <a href="#">Historial de clientes</a>       
     </div>
     <div class="content">
-        <h2 id="usuarios">Usuarios Registrados</h2>
+        <h2 id="usuarios">Citas registradas</h2>
         <form class="search-form" method="post" action="">
             <input type="text" name="search" placeholder="Buscar usuarios..." value="<?php echo $search; ?>">
             <input type="submit" value="Buscar">
