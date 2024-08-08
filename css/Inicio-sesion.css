@@ -65,3 +65,9 @@ a {
 a:hover {
     color: #2E865F; /* Color verde oscuro */
 }
+
+.alerta{
+    color: red;
+    font-size: large;
+    
+}

@@ -286,9 +286,6 @@ header {
   animation: 0.5s ease forwards slideDown;
 }
 
-.logo{
-
-}
 
 .menu.show {
   transition: all 200ms ease-in-out;
