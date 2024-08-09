@@ -66,7 +66,7 @@ $result = $conn->query($sql);
     <div class="sidebar">
         <a href="../php/administrador.php">Citas registradas</a>
         <a href="#servicios">Clientes registrados</a>
-        <a href="#configuracion">Historial</a>       
+        <a href="./empleados.php">Usuarios</a>       
     </div>
     <div class="content">
         <h2 id="clientes">Registro de Clientes</h2>
