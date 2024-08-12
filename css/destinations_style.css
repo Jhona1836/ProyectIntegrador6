@@ -12,6 +12,8 @@ header {
 	margin-bottom: var(--mb-sections);
 }
 
+
+
 /* --------- SPAIN STYLES ------------ */
 .spain {
 	display: flex;
@@ -473,6 +475,7 @@ header {
 .monument1En .content > span {
 	margin-left: auto;
 }
+logo
 
 .monument1En .content > span i {
 	margin-inline-start: 10px;
