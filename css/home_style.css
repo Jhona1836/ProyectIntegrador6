@@ -148,7 +148,7 @@ header {
 	flex: 1;
 	height: 540px;
 	max-width: 400px;
-	background-image: url(../img/home/img-marketing1.jpg);
+	background-image: url(../img/home//fondo1.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -160,7 +160,7 @@ header {
 .whyHorizonImages .imagePrincipal .imageSecundaria {
 	width: 230px;
 	height: 340px;
-	background-image: url(../img/home/img-marketing2.jpg);
+	background-image: url(../img/home/fondo2.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -357,22 +357,22 @@ header {
 .aboutHorizonGallery .photo:first-child .img {
 	width: 100%;
 	height: 100%;
-	background-image: url(../img/home/aboutFoto1.jpg);
+	background-image: url(../img/home/marketing1.jpg);
 }
 .aboutHorizonGallery .photo:nth-child(2) .img {
 	width: 100%;
 	height: 100%;
-	background-image: url(../img/home/aboutFoto4.jpg);
+	background-image: url(../img/home/marketing2.jpg);
 }
 .aboutHorizonGallery .photo:nth-child(3) .img {
 	width: 100%;
 	height: 100%;
-	background-image: url(../img/home/aboutFoto3.jpg);
+	background-image: url(../img/home/marketing4.jpg);
 }
 .aboutHorizonGallery .photo:last-child .img {
 	width: 100%;
 	height: 100%;
-	background-image: url(../img/home/aboutFoto2.jpg);
+	background-image: url(../img/home/marketing3.jpg);
 }
 
 .aboutHorizonGallery .photo .img {
@@ -611,16 +611,16 @@ header {
 }
 
 .teamMember:first-child .image .img {
-	background-image: url(../img/home/teamFt1.jpg);
+	background-image: url(../img/home/Team1.jpg);
 }
 .teamMember:nth-child(2) .image .img {
-	background-image: url(../img/home/teamFt4.jpg);
+	background-image: url(../img/home/Team2.JPG);
 }
 .teamMember:nth-child(3) .image .img {
-	background-image: url(../img/home/teamFt2.jpg);
+	background-image: url(../img/home/Team3.jpg);
 }
 .teamMember:last-child .image .img {
-	background-image: url(../img/home/teamFt3.jpg);
+	background-image: url(../img/home/Team4.JPEG);
 }
 
 .teamMember .name {
@@ -636,6 +636,7 @@ header {
 	justify-content: space-evenly;
 	align-items: center;
 	align-content: center;
+
 }
 
 .teamMember .socials .social {
@@ -646,14 +647,18 @@ header {
 	background-repeat: no-repeat;
 	cursor: pointer;
 	transition: all 0.2s ease-in-out;
+    
 }
 
 .teamMember .socials .social:hover {
 	transform: rotate(5deg) translateY(-2px) scale(1.01);
+
 }
 
 .teamMember .socials .social:first-child {
+
 	background-image: url(../img/icons/fb_ico.svg);
+    
 }
 .teamMember .socials .social:nth-child(2) {
 	background-image: url(../img/icons/tw_ico.svg);
@@ -670,6 +675,7 @@ header {
 .teamMember .socials .social:last-child:hover {
 	background-image: url(../img/icons/insta_o_ico.svg);
 }
+
 
 /* --------------- MEDIA QUERIES ---------------- */
 @media screen and (max-width: 1700px) {
@@ -1102,4 +1108,3 @@ header {
 	font-weight: bold;
 	color: black;
 }
-
