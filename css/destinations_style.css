@@ -862,16 +862,16 @@ header {
 }
 
 .teamMember:first-child .image .img {
-	background-image: url(../img/home/teamFt1.jpg);
+	background-image: url(../img/home/Team1.jpg);
 }
 .teamMember:nth-child(2) .image .img {
-	background-image: url(../img/home/teamFt4.jpg);
+	background-image: url(../img/home/Team2.JPG);
 }
 .teamMember:nth-child(3) .image .img {
-	background-image: url(../img/home/teamFt2.jpg);
+	background-image: url(../img/home/Team3.jpg);
 }
 .teamMember:last-child .image .img {
-	background-image: url(../img/home/teamFt3.jpg);
+	background-image: url(../img/home/Team4.JPEG);
 }
 
 .teamMember .name {
