@@ -64,9 +64,10 @@ $result = $conn->query($sql);
         </div>
     </div>
     <div class="sidebar">
-        <a href="../php/administrador.php">Citas registradas</a>
-        <a href="#servicios">Clientes registrados</a>
-        <a href="./empleados.php">Usuarios</a>       
+    <a href="./administrador.php">Citas registradas</a>
+        <a href="../php/detallesservicio.php">Clientes registrados</a>
+        <a href="./empleados.php">Usuarios</a> 
+        <li><button id="cerrar-sesion">Cerrar sesión</button></li>         
     </div>
     <div class="content">
         <h2 id="clientes">Registro de Clientes</h2>

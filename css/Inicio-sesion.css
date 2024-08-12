@@ -1,73 +1,134 @@
-/* styles.css */
 body {
     font-family: Arial, sans-serif;
-    background-color: #333; /* Color negro */
-    color: #fff; /* Color blanco */
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-    max-width: 300px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #444; /* Color gris oscuro */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 
 .login-form {
-    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin: 40px auto;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 h2 {
-    margin-top: 0;
-    color: #34C759; /* Color verde */
+    color: #33CC33; /* verde claro */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff; /* blanco */
 }
 
 input[type="text"], input[type="password"] {
     width: 100%;
-    padding: 10px;
+    height: 40px;
     margin-bottom: 20px;
+    padding: 10px;
     border: none;
     border-radius: 10px;
-    background-color: #444; /* Color gris oscuro */
-    color: #fff; /* Color blanco */
+    background-color: #444; /* fondo oscuro */
+    color: #fff; /* blanco */
 }
 
 input[type="text"]:focus, input[type="password"]:focus {
-    background-color: #333; /* Color negro */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #33CC33; /* verde claro */
+    color: #fff; /* blanco */
 }
 
 button[type="submit"] {
     width: 100%;
-    padding: 10px;
+    height: 40px;
+    background-color: #33CC33; /* verde claro */
+    color: #fff; /* blanco */
     border: none;
     border-radius: 10px;
-    background-color: #34C759; /* Color verde */
-    color: #fff; /* Color blanco */
     cursor: pointer;
 }
 
 button[type="submit"]:hover {
-    background-color: #2E865F; /* Color verde oscuro */
+    background-color: #00CC00; /* verde más claro */
 }
 
 p {
+    text-align: center;
     margin-top: 20px;
-    font-size: 14px;
 }
 
 a {
+    color: #33CC33; /* verde claro */
     text-decoration: none;
-    color: #34C759; /* Color verde */
 }
 
 a:hover {
-    color: #2E865F; /* Color verde oscuro */
+    color: #00CC00; /* verde más claro */
 }
 
-.alerta{
-    color: red;
-    font-size: large;
-    
+
+
+.content{
+    text-align: center;
 }
+
+.content h1{
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    font-size: 95px;
+}
+
+.content h1:hover{
+    
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+
+
+.background-clip{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio:16/9) {
+    .background-clip{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio:16/9) {
+    .background-clip{
+        width: auto;
+        height: 100%;
+    }
+}
+
+
+.nav-img{
+    margin-top: 3%;}
