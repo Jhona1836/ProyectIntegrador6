@@ -131,7 +131,7 @@ header {
 }
 
 .london .photo {
-	background-image: url(../img/journeys/london_journey.jpg);
+	background-image: url(../img/journeys/london_journey.png);
 }
 
 .journey-a > .content {
@@ -216,11 +216,11 @@ header {
 
 /* ------------------ BARCELONA */
 .barcelona .photo {
-	background-image: url(../img/journeys/barcelona_journey.jpg);
+	background-image: url(../img/journeys/estandar.jpg);
 }
 /* ------------------ MALAGA */
 .malaga .photo {
-	background-image: url(../img/journeys/malaga_journey.jpg);
+	background-image: url(../img/journeys/premium.png);
 }
 
 .malaga {
@@ -237,7 +237,7 @@ header {
 }
 /* -------------------- PARIS */
 .paris .photo {
-	background-image: url(../img/journeys/paris_journey.jpg);
+	background-image: url(../img/journeys/personalizado.jpeg);
 }
 /* ----------------------- LYON */
 .lyon .photo {

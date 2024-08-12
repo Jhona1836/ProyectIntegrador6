@@ -64,9 +64,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["action"])) {
     </div>
 <body>
     <div class="sidebar">
-        <a href="#usuarios">Citas registradas</a>
+    <a href="./administrador.php">Citas registradas</a>
         <a href="../php/detallesservicio.php">Clientes registrados</a>
-        <a href="./empleados.php">usuarios</a>       
+        <a href="./empleados.php">Usuarios</a> 
+        <li><button id="cerrar-sesion">Cerrar sesión</button></li>        
     </div>
     <div class="content">
         <h2 id="usuarios">Citas registradas</h2>
