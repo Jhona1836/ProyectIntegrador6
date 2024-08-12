@@ -44,8 +44,8 @@ if(isset($_POST["btningresar"])){
             Tu navegador no soporta formato de video,<br>
             Te recomendamos tener un navegador mas actual para disfrutar la experiencia completa.
         </video>
-        <div class="content">
-            <h1>PixelCraft</h1>
+        <div class="content"><a href="../index.html">
+            <h1>PixelCraft</h1></a>
         </div>
 
         <div class="login-form">
